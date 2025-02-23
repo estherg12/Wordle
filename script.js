@@ -1,4 +1,4 @@
-const CODE = "21deDiciembre"; // Código correcto
+const CODE = "1234"; // Código correcto
 const targetWord = "HIELO";
 const maxAttempts = 6;
 let attempts = 0;
