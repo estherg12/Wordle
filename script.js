@@ -185,7 +185,6 @@ function startGame() {
     }
 
     // Eventos de entrada del teclado físico
-    document.addEventListener("keydown", handlePhysicalKeyboard);
 
     handlePhysicalKeyboard()
     document.getElementById("keydown").addEventListener("keypress", (e) => {
