@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121213;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #3a3a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.present {
+    background-color: #c9b458;
+    color: white;
+}
+
+.absent {
+    background-color: #787c7e;
+    color: white;
+}
+
+h1, h2 {
+    color: #6aaa64;
+    font-family: Arial, sans-serif;
+}
+
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #3a3a3c;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  input[type="text"].error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    display: none;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6aaa64;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+button:hover {
+    background-color: #6aaa64;
+}
+
+/* Teclado virtual */
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.key {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3c;
+    color: white;
+    cursor: pointer;
+}
+  
+.key.correct {
+    background-color: #6aaa64;
+}
+
+.key.present {
+    background-color: #c9b458;
+}
+
+.key.absent {
+    background-color: #787c7e;
+}
+
+#end-message {
+    display: none;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+#end-message.win {
+    background-color: #6aaa64;
+    color: white;
+}
+#end-message.lose {
+    background-color: #d32f2f;
+    color: white;
+}

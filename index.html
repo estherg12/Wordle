@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="initial-page">
+        <h1>¡Bienvenido a tu regalo de hoy!</h1>
+        <h2>Por favor, introduce el código para continuar</h2>
+        <input type="text" id="code-input" placeholder="Introduce el código">
+        <div class="error-message" id="error-message">ERROR</div>
+        <button onclick="checkCode()">→</button>
+    </div>
+    <div id="game-container" style = "display: none;">
+        <div id="grid"></div>
+        <div id="end-message"></div> <!-- Contenedor para el mensaje final -->
+        <div id="keyboard"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
